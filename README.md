@@ -34,7 +34,7 @@ var mutex = CreateObject("ComMutex.ComMutex")
 // Aquire mutex
 var createMutex = mutex.Create("hMailAuthLogMutex");
 if(createMutex === false){
-    EventLog.Write('Failed to create mutex')
+    WScript.Echo('Failed to create mutex')
 }
 // wait
 var wait = mutex.WaitWithTimeout(5000);
