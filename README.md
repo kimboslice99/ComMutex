@@ -32,7 +32,7 @@ C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Regasm.exe /codebase ComMutex.dl
 var mutex = CreateObject("ComMutex.ComMutex")
 
 // Aquire mutex
-var createMutex = mutex.Create("hMailAuthLogMutex");
+var createMutex = mutex.Create("MyMutex");
 if(createMutex === false){
     WScript.Echo('Failed to create mutex')
 }
