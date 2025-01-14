@@ -29,20 +29,20 @@ C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Regasm.exe /codebase ComMutex.dl
 #### Example in Windows JScript
 
 ```javascript
-var mutex = CreateObject("ComMutex.ComMutex")
+var mutex = CreateObject("ComMutex.ComMutex");
 
 // Aquire mutex
 var createMutex = mutex.Create("MyMutex");
 if(createMutex === false){
-    WScript.Echo('Failed to create mutex')
+    WScript.Echo('Failed to create mutex');
 }
 // wait
 var wait = mutex.WaitWithTimeout(5000);
 if(wait === true){
-    WScript.Echo("Aquired mutex")
+    WScript.Echo("Aquired mutex");
 }
 
 // thread safe section of code
 
 // Release the mutex 
-mutex.ReleaseMutex()
+mutex.ReleaseMutex();
