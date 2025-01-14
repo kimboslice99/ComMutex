@@ -28,7 +28,7 @@ C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Regasm.exe /codebase ComMutex.dl
 
 #### Example in Windows JScript
 
-```jscript
+```javascript
 var mutex = CreateObject("ComMutex.ComMutex")
 
 // Aquire mutex
